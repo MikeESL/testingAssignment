@@ -54,6 +54,7 @@ describe("About Mutability", function() {
     aPerson.lastname = "Andrews";
     aPerson.fullName = "Penny Andrews";
 
+    // not sure I understand this
     expect(aPerson.getFirstName()).toBe('John');
     expect(aPerson.getLastName()).toBe('Smith');
     expect(aPerson.getFullName()).toBe('John Smith');

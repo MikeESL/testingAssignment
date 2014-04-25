@@ -42,6 +42,7 @@ describe("About Higher Order Functions", function () {
 
     _(numbers).forEach(isEven);
 
+    // no commas?
     expect(msg).toEqual('falsetruefalse');
     expect(numbers).toEqual([1, 2, 3]);
   });
@@ -66,6 +67,8 @@ describe("About Higher Order Functions", function () {
     expect(_(mixedBag).any(isEven)).toBe(true);
   });
 
+
+  //underscore .range - need to understand better
   it("should use range to generate an array", function() {
       expect(_.range(3)).toEqual([0, 1, 2]);
       expect(_.range(1, 4)).toEqual([1, 2, 3,]);
